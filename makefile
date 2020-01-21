@@ -1,5 +1,5 @@
-all: myprog.c
-	gcc -g -Wall -o myprog myprog.c
+myexe.exe: main.cpp myfunc.cpp myfunc.h
+	gcc -g -Wall -o myexe.exe main.cpp myfunc.cpp myfunc.h
 
 clean: 
-	$(RM) myprog
+	$(RM) myexe.exe
